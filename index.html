@@ -18,31 +18,51 @@
         <section class="header__top">
           <div class="header__top-wrapper container">
             <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
-              <button class="main-nav__toggle" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-              </button>
-              <ul class="main-nav__list main-menu">
-                <li class="main-menu__item">
-                  <a href="#" class="main-menu__link">Почему мы</a>
-                </li>
-                <li class="main-menu__item">
-                  <a href="#" class="main-menu__link">Как мы работаем</a>
-                </li>
-                <li class="main-menu__item">
-                  <a href="#" class="main-menu__link">Где нас найти</a>
-                </li>
-              </ul>
-              <button class="main-nav__close" type="button">
-                <span class="visually-hidden">Закрыть меню</span>
-              </button>
+              <!-- <div class="container"> -->
+                <p class="main-nav__logo">
+                  <!-- <img class="main-nav__logo-image" src="img/logo.svg" width="80" height="27" alt="logo"> -->
+                  <svg class="main-nav__logo-image" width = "50" height= "30">
+                      <use xlink:href = "img/pictures.svg#logo"></use>
+                    </svg>
+                </p>
+                <button class="main-nav__toggle" type="button">
+                  <span class="visually-hidden">Открыть меню</span>
+                </button>
+                <ul class="main-nav__list main-menu">
+                  <li class="main-menu__item">
+                    <a href="#" class="main-menu__link">Почему мы</a>
+                  </li>
+                  <li class="main-menu__item">
+                    <a href="#" class="main-menu__link">Портфолио</a>
+                  </li>
+                  <li class="main-menu__item">
+                    <a href="#" class="main-menu__link">Наши тарифы</a>
+                  </li>
+                  <li class="main-menu__item">
+                    <a href="#" class="main-menu__link">Как мы работаем</a>
+                  </li>
+                  <li class="main-menu__item">
+                    <a href="#" class="main-menu__link">Наша команда</a>
+                  </li>
+                  <li class="main-menu__item">
+                    <a href="#" class="main-menu__link">Где нас найти</a>
+                  </li>
+                </ul>
+                <button class="main-nav__close" type="button">
+                  <span class="visually-hidden">Закрыть меню</span>
+                </button>
+              <!-- </div> -->
             </nav>
             <a class="header__logo">
               <img class="header__logo-image" src="img/logo.svg" width="80" height="27" alt="logo">
             </a>
             <p class="header__logo-text">Маркетинговое агенство полного цикла</p>
 
-            <a class="header__call" href="#" aria-label="заказать звонок"></a>
-            <p class="header__phone-number">+7 (964) 581-71-55</p>
+            <div class="header__call-wrapper call">
+              <a class="call__link call__link--mobile" href="#" aria-label="заказать звонок">+7 (964) 581-71-55</a>
+              <a class="call__link call__link--city" href="#" aria-label="заказать звонок">+7 (495) 957-04-44</a>
+            </div>
+
           </div>
         </section>
 
@@ -69,7 +89,79 @@
 
     </header>
     <main class="page__main page-main">
-
+      <section class="page-main__portfolio portfolio">
+        <div class="portfolio__container container">
+          <h2 class="portfolio__title title">
+            Наше <span class="title__span">портфолио</span>
+          </h2>
+          <div class="portfolio__select-wrapper">
+            <p class="portfolio__text">Отфильтруйте к просмотру проекты, которые вам действительно интересны</p>
+            <select class="portfolio__select" name="portfolio">
+              <option value="all" selected>Все</option>
+              <option value="one">one</option>
+              <option value="two">two</option>
+              <option value="three">three</option>
+            </select>
+          </div>
+          <ul class="poftfolio__list">
+            <li class="portfolio__item">
+              <img class="portfolio__item-image" src="img/portfolio-item01.jpg" width="290" height="250" alt="portfolio01">
+              <div class="portfolio__item-info item-info">
+                <h3 class="item-info__title">Уютные мангальные зоны</h3>
+                <p class="item-info__text1">Услуги для бизнеса 2018</p>
+                <a class="item-info__link" href="#">Подробнее---></a>
+                <p class="item-info__text2">Конверсия увеличена в 1.5 раз</p>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <img class="portfolio__item-image" src="img/portfolio-item02.jpg" width="290" height="250" alt="portfolio01">
+              <div class="portfolio__item-info item-info">
+                <h3 class="item-info__title">Уютные мангальные зоны</h3>
+                <p class="item-info__text1">Услуги для бизнеса 2018</p>
+                <a class="item-info__link" href="#">Подробнее---></a>
+                <p class="item-info__text2">Конверсия увеличена в 1.5 раз</p>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <img class="portfolio__item-image" src="img/portfolio-item03.jpg" width="290" height="250" alt="portfolio01">
+              <div class="portfolio__item-info item-info">
+                <h3 class="item-info__title">Уютные мангальные зоны</h3>
+                <p class="item-info__text1">Услуги для бизнеса 2018</p>
+                <a class="item-info__link" href="#">Подробнее---></a>
+                <p class="item-info__text2">Конверсия увеличена в 1.5 раз</p>
+              </div>
+            </li>
+            <li class="portfolio__item portfolio__item--hidden">
+              <img class="portfolio__item-image" src="img/portfolio-item04.jpg" width="290" height="250" alt="portfolio01">
+              <div class="portfolio__item-info item-info">
+                <h3 class="item-info__title">Уютные мангальные зоны</h3>
+                <p class="item-info__text1">Услуги для бизнеса 2018</p>
+                <a class="item-info__link" href="#">Подробнее---></a>
+                <p class="item-info__text2">Конверсия увеличена в 1.5 раз</p>
+              </div>
+            </li>
+            <li class="portfolio__item portfolio__item--hidden">
+              <img class="portfolio__item-image" src="img/portfolio-item05.jpg" width="290" height="250" alt="portfolio01">
+              <div class="portfolio__item-info item-info">
+                <h3 class="item-info__title">Уютные мангальные зоны</h3>
+                <p class="item-info__text1">Услуги для бизнеса 2018</p>
+                <a class="item-info__link" href="#">Подробнее---></a>
+                <p class="item-info__text2">Конверсия увеличена в 1.5 раз</p>
+              </div>
+            </li>
+            <li class="portfolio__item portfolio__item--hidden">
+              <img class="portfolio__item-image" src="img/portfolio-item06.jpg" width="290" height="250" alt="portfolio01">
+              <div class="portfolio__item-info item-info">
+                <h3 class="item-info__title">Уютные мангальные зоны</h3>
+                <p class="item-info__text1">Услуги для бизнеса 2018</p>
+                <a class="item-info__link" href="#">Подробнее---></a>
+                <p class="item-info__text2">Конверсия увеличена в 1.5 раз</p>
+              </div>
+            </li>
+          </ul>
+          <button class="portfolio__more-link" type="button">ещё проекты</button>
+        </div>
+      </section>
       <section class="page-main__uniqueness uniqueness">
         <div class="container">
           <h2 class="uniqueness__title title">Почему
@@ -408,10 +500,14 @@
             <a class="footer__privacy" href="#">Политика конфиденциальности</a>
           </div>
         </div>
-        <a class="footer__mobile-phone" href="#">
+        <!-- <a class="footer__mobile-phone" href="#">
           <span class="visually-hidden">Позвоните нам</span>
         </a>
-        <p class="footer__phone">+7 (964) 581 71 55</p>
+        <p class="footer__phone">+7 (964) 581 71 55</p> -->
+        <div class="footer__call-wrapper call">
+            <a class="call__link call__link--mobile" href="#" aria-label="заказать звонок">+7 (964) 581-71-55</a>
+            <a class="call__link call__link--city" href="#" aria-label="заказать звонок">+7 (495) 957-04-44</a>
+          </div>
       </div>
     </footer>
     <script src="js/main.js"></script>
