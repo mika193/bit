@@ -2676,6 +2676,7 @@ input[type="radio"].visually-hidden {
     -ms-flex-positive: 1;
     flex-grow: 1;
     width: 39.9%;
+    margin-bottom: 0;
     margin-left: 18px;
     padding: 33px 10px 29px 19px; }
   .contacts__text {
