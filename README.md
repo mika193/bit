@@ -1,2 +1,2 @@
 # bit
-[Демо](https://https://mika193.github.io/bit/)
+[Демо](https://mika193.github.io/bit/)
